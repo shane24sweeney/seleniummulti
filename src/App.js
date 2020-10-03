@@ -2,9 +2,9 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { NavigationBar } from './components/NavigationBar';
 import Home from './components/Home';
-import About from './components/About';
-import  Education from './components/Education';
-import Resume from './components/Resume';
+import  AdoptableDogs from './components/AdoptableDogs';
+import AdoptionApplication from './components/AdoptionApplication';
+import FosterApplication from './components/FosterApplication';
 import React, {Component} from 'react';
 
  
@@ -16,9 +16,9 @@ class App extends Component {
         <NavigationBar />
         <Switch>
   <Route exact path="/" component={Home} />
-  <Route path="/about" component={About} />
-  <Route path="/education" component={Education} />
-  <Route path="/resume" component={Resume} />
+   <Route path="/adoptabledogs" component={AdoptableDogs} />
+  <Route path="/adoptionapplication" component={AdoptionApplication} />
+  <Route path="/fosterapplication" component={FosterApplication} />
 </Switch>
       </Router>
     </React.Fragment>

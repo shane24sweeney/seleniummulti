@@ -14,24 +14,20 @@ const Styles = styled.div`
   }
   .form-center {
     position: absolute !important;
-    left: 25%;
-    right: 25%;
   }
 `;
 export const NavigationBar = () => (
   <Styles>
     <Navbar expand="lg">
-      <Navbar.Brand href="/">Tutorial</Navbar.Brand>
+      <Navbar.Brand href="/">Dog Days Rescue</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-      <Form className="form-center">
-        <FormControl type="text" placeholder="Search" className="" />
-      </Form>
+     
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="ml-auto">
-          <Nav.Item><Nav.Link href="/">Home</Nav.Link></Nav.Item> 
-          <Nav.Item><Nav.Link href="/about">About Me</Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="/education">Education</Nav.Link></Nav.Item>
-          <Nav.Item><Nav.Link href="/resume">Resume</Nav.Link></Nav.Item>
+        <Nav>
+          <Nav.Item><Nav.Link href="/">ABOUT US</Nav.Link></Nav.Item> 
+          <Nav.Item><Nav.Link href="/AdoptableDogs">ADOPTABLE DOGS</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="/AdoptionApplication">ADOPTION APPLICATION</Nav.Link></Nav.Item>
+          <Nav.Item><Nav.Link href="/FosterApplication">FOSTER APPLICATION</Nav.Link></Nav.Item>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
