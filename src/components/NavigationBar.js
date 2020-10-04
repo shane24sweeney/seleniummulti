@@ -1,6 +1,8 @@
 import React from 'react';
 import { Nav, Navbar, Form, FormControl } from 'react-bootstrap';
 import styled from 'styled-components';
+import MediaQuery from 'react-responsive'
+
 const Styles = styled.div`
   .navbar { background-color: #222; }
   a, .navbar-nav, .navbar-light .nav-link {
@@ -18,6 +20,14 @@ const Styles = styled.div`
 `;
 export const NavigationBar = () => (
   <Styles>
+     <MediaQuery minDeviceWidth={1224} device={{ deviceWidth: 1600 }}>
+      <MediaQuery minDeviceWidth={1824}>
+      </MediaQuery>
+    </MediaQuery>
+    <MediaQuery minResolution='2dppx'>
+      {/* You can also use a function (render prop) as a child */}
+     
+    </MediaQuery>
     <Navbar expand="lg">
       <Navbar.Brand href="/">Dog Days Rescue</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav"/>
